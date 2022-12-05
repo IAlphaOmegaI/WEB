@@ -14,6 +14,48 @@ body{
 h5{
 	display: inline-block;
 }
+.main{
+	z-index: -10;
+	/* position: absolute; */
+	/* height: 100%;
+	width: 100%; */
+	filter: blur(0px);
+	/* color: #ccc; */
+	/* filter: blur(8px); */
+
+}
+.absolute{
+	border: rgb(58, 43, 226) 3px solid;
+	position: absolute; 
+	padding: 2rem;
+	border-radius: 1rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+.absolute.active{
+	/* z-index: 2000; */
+	position: fixed;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+.absoluteBttn{
+	position: absolute;
+	right: 1%;
+	top: 2%;
+	height: 5rem;
+	width: 5rem;
+	/* transform: translate(-50%, -50%); */
+	display: none;
+}
+
+.absolute.active img{
+	width:100%;
+	height: auto;
+}
 .list{
 	color: #ffff;
 	margin-left: 26rem;
@@ -167,6 +209,7 @@ background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%,
         background-position: 0% 0%;
     }
 }
+
 .wave {
     animation: wave 10s -3s linear infinite;
     background: rgb(255 255 255 / 25%);

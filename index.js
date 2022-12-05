@@ -11,3 +11,31 @@ for (var i = 1; i <= 6; i++) {
   var menu = "#menu" + i;
   dropDown(button, menu);
 }
+// alert(JSON.stringify($("#search")));
+const searchInput = $("#search");
+var searchQuery = [, ,];
+var length = $(".par").length;
+for (var j = 0; j < length; j++) {
+  searchQuery[j] = document.querySelectorAll(".par")[j].innerText;
+}
+$("#searcBttn").click(function () {
+  $(".par").each(function parseParagraphs() {
+    const s = $(this);
+    alert(s.text().includes(searchInput.value) ? s.text() : "");
+  });
+});
+
+$(document).on(`click`, `.chart`, function showChartBigger() {
+  const s = $(this),
+    sc = s.clone();
+  $(`.absolute`).addClass(`active`).empty().append(sc);
+  $(`.absoluteBttn`).css({ position: "fixed", display: "block" });
+  $(".main").css({ filter: "blur(20px)", "z-index": "1000" });
+  $(".wave").hide();
+});
+$(".absoluteBttn").click(function () {
+  $(`.absoluteBttn`).css({ position: "absolute", display: "none" });
+  $(".main").css({ filter: "blur(0px)", "z-index": "-10" });
+  $(".wave").show();
+  $(".absolute").removeClass("active");
+});
