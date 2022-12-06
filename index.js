@@ -24,18 +24,21 @@ $("#searcBttn").click(function () {
     alert(s.text().includes(searchInput.value) ? s.text() : "");
   });
 });
+// $(".secondary").hide();
 
 $(document).on(`click`, `.chart`, function showChartBigger() {
   const s = $(this),
     sc = s.clone();
-  $(`.absolute`).addClass(`active`).empty().append(sc);
-  $(`.absoluteBttn`).css({ position: "fixed", display: "block" });
-  $(".main").css({ filter: "blur(20px)", "z-index": "1000" });
-  $(".wave").hide();
+  $(`.absolute, .secondary, body`).addClass(`active`);
+  $(`.absolute-container`).empty().append(sc);
+  // $(`.absoluteBttn`).css({ position: "fixed", display: "block" });
+  // $(".main").css({ filter: "blur(20px)", "z-index": "1000" });
+  // $(".wave").hide();
 });
 $(".absoluteBttn").click(function () {
-  $(`.absoluteBttn`).css({ position: "absolute", display: "none" });
-  $(".main").css({ filter: "blur(0px)", "z-index": "-10" });
-  $(".wave").show();
-  $(".absolute").removeClass("active");
+  $(`.absolute, .secondary, body`).removeClass(`active`);
+  // $(`.absoluteBttn`).css({ position: "absolute", display: "none" });
+  // $(".main").css({ filter: "blur(0px)", "z-index": "-10" });
+  // $(".wave").show();
+  // $(".absolute").removeClass("active");
 });

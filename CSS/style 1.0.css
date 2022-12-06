@@ -14,15 +14,17 @@ body{
 h5{
 	display: inline-block;
 }
-.main{
-	z-index: -10;
+/* .main{
+	z-index: -10; */
 	/* position: absolute; */
 	/* height: 100%;
 	width: 100%; */
-	filter: blur(0px);
+	/* filter: blur(0px); */
 	/* color: #ccc; */
-	/* filter: blur(8px); */
-
+	/* filter: blur(8px);
+} */
+.row{
+	position: relative;
 }
 .absolute{
 	border: rgb(58, 43, 226) 3px solid;
@@ -38,21 +40,25 @@ h5{
 	/* z-index: 2000; */
 	position: fixed;
 	display:flex;
+	flex-flow:column;
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
 }
+.absolute header{
+	display: flex;
+	justify-content: flex-end;
+	width:100%;
+	height: 30px;
+}
 .absoluteBttn{
-	position: absolute;
-	right: 1%;
-	top: 2%;
-	height: 5rem;
-	width: 5rem;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
 	/* transform: translate(-50%, -50%); */
-	display: none;
 }
 
-.absolute.active img{
+.absolute.active img:not(.absoluteBttn){
 	width:100%;
 	height: auto;
 }
@@ -222,6 +228,24 @@ background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%,
     transform: translate3d(0, 0, 0);
     width: 200%;
     z-index: -1;
+}
+body.active{
+	overflow: hidden;
+}
+.secondary{
+	display:none;
+}
+.secondary.active{
+	position:fixed;
+	filter:blur(50px);
+	width:100%;
+	height:100%;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	z-index:11;
+	display:block;
+	background:rgba(0, 0, 0 , 0.3)
 }
 .wave:nth-of-type(2) {
     animation: wave 18s linear reverse infinite;
