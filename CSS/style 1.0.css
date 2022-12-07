@@ -27,10 +27,8 @@ h5{
 	position: relative;
 }
 .absolute{
-	border: rgb(58, 43, 226) 3px solid;
 	position: absolute; 
 	padding: 2rem;
-	border-radius: 1rem;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -54,10 +52,10 @@ h5{
 .absoluteBttn{
 	width: 30px;
 	height: 30px;
-	margin-right: 10px;
+	/* margin-right: 10px; */
+	/* margin-bottom: 20px; */
 	/* transform: translate(-50%, -50%); */
 }
-
 .absolute.active img:not(.absoluteBttn){
 	width:100%;
 	height: auto;
@@ -90,7 +88,6 @@ h5{
 	border-bottom-right-radius: 0;
 	border-width: 1px 1px 0 1px;
 	text-align: center;
-	
 }
 .dropdown-col1{
 	border-style: solid;
@@ -215,7 +212,24 @@ background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%,
         background-position: 0% 0%;
     }
 }
-
+.searchList{
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	display: none;
+	font-size: small;
+	position: absolute;
+	z-index: 10;
+    /* border-radius: 1rem; */
+    /* border: black 3px solid; */
+    background-color: #ffffff6d;
+    left: 57.188rem;
+    top: 4.5rem;
+    width: 14rem;
+}
+.searchListInner{
+	/* padding-top: 5px; */
+	list-style-type: square;
+}
 .wave {
     animation: wave 10s -3s linear infinite;
     background: rgb(255 255 255 / 25%);
