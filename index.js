@@ -4,11 +4,13 @@ $(`form.d-flex`).on(`submit`, function returnSubmitOfText(e) {
   e.preventDefault();
 });
 $(".dropdownMenu").slideUp(0);
+
 function dropDown(button, menu) {
   $(button).click(function () {
     $(menu).slideToggle(500);
   });
 }
+
 //When you press button/x it should by default add the dropdown menu/x to corespond to that button/x which can be achieved through contacination and a for loop
 //6 is the number of rows in the table
 for (var i = 1; i <= 6; i++) {
