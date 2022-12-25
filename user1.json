@@ -1,2 +1,23 @@
-{ "email": ["Xhurian@gmail.com","flavio@outlook.com","Luis@yahoo.com"], 
-"password": ["Qafshtama1.","Lajthiza2.","Selita3."]}
+{
+    "users":
+    {
+        "user1":
+        {
+            "email":"email1@gmail.com",
+            "password":"Password1."
+        },
+
+        "user2":
+        {
+            "email":"email2@gmail.com",
+            "password":"Password2."
+        },
+
+        "user3":
+        {
+            "email":"email1@gmail.com",
+            "password":"Password1."
+        }
+
+    }
+}
