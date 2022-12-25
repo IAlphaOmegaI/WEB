@@ -32,31 +32,27 @@ $(".absoluteBttn").click(function () {
 });
 //IMAGE PROCESSING-----------------------------------------------------------------------------------------
 //JSON-----------------------------------------------------------------------------------------------------
-// alert("HI");
+const errorOutput=$("#formError");
 $.ajax({
   type:"GET",
   url: "./user1.json",
   data:"",
   success: function (json){
-    // console.log(json.email[1]);
-    // $.each(json.users, function(key, value){
-    //   console.log(value.email)
-    // })
+
+   
     const email= $(".emailInput").val(), password= $(".passwordInput").val();
-    $("bttnInput").click(()=>{
-      const errorOutput=$("#formError");
-      errorOutput.hide();
-      email=="" && (password== "")
-      ?  ()=>{
+    $(".bttnInput").click(()=>{
+      if (email=="" && (password== ""))
+      {
         errorOutput.text("Both Email and Password are missing!");
         errorOutput.show();
       }
-      : email== "" || (password =="")
-      ? ()=>{
+      else if (email== "" || (password ==""))
+      {
         errorOutput.text("Either Email or Password is missing!");
         errorOutput.show();
       }
-      : ()=>{
+      else{
         var ePattern = new RegExp("^(?=.*[@.]).+$");
         var pattern = new RegExp(
           "^(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).+$"
@@ -65,22 +61,22 @@ $.ajax({
         ? function () {
           $.each(json.users, function(key, value){
             // console.log(value.email)
-            email==value.email && (password==value.password)
-            ? ()=>{
+            if (email==value.email && (password==value.password))
+            {
               errorOutput.text("Logged In");
               errorOutput.show();
             }
-            : email== value.email
-            ? ()=>{
+            else if (email== value.email)
+            {
               errorOutput.text("Password Incorrect");
               errorOutput.show();
             }
-            : password= value.password
-            ? ()=>{
+            else if (password= value.password)
+            {
               errorOutput.text("Email Incorrect");
               errorOutput.show();
             }
-            : ()=>{
+            else{
               errorOutput.text("Both Email and Password are incorrect")
               errorOutput.show();
             }
@@ -97,10 +93,14 @@ $.ajax({
       };
     })
     
+  },
+  error: function (errorCode){
+    console.log(errorCode);
   }
-
-
-
-
 })
-
+$(".emailInput").keydown(function Dissapear(){
+  errorOutput.hide();
+})
+$(".passwordInput").keydown(function (){
+  Dissapear();
+})

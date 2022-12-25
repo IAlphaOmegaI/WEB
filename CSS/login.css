@@ -49,6 +49,13 @@ form a:hover {
 form a:active {
   text-shadow: none;
 }
+form h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
+}
 form input {
   background: transparent;
   width: 300px;
