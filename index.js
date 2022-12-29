@@ -3,18 +3,13 @@ $(`form.d-flex`).on(`submit`, function returnSubmitOfText(e) {
   e.preventDefault();
 });
 $(".dropdownMenu").slideUp(0);
-
 function dropDown(button, menu) {
   $(button).click(function () {
     $(menu).slideToggle(500);
   });
 }
-// for (var i = 1; i <= $(".dropdownMenu").length ; i++) {
-//   var button = "#btndropdown" + i;
-//   var menu = "#menu" + i;
-//   dropDown(button, menu);
-// }
 $(".dropdownMenu").each(function (i){
+  console.log(i);
   var button = "#btndropdown" + i;
   var menu = "#menu" + i;
   dropDown(button, menu);
@@ -38,8 +33,6 @@ $.ajax({
   url: "./user1.json",
   data:"",
   success: function (json){
-
-   
     const email= $(".emailInput").val(), password= $(".passwordInput").val();
     $(".bttnInput").click(()=>{
       if (email=="" && (password== ""))
@@ -86,13 +79,10 @@ $.ajax({
         ?  () => {
             errorOutput.text("Either your Email or Password doesn't fulfill the criteria. Password must be 8 characters long, contain a special character and an upercase letter.");
             errorOutput.show();
-
         }
         : console.log("else");
-    
       };
     })
-    
   },
   error: function (errorCode){
     console.log(errorCode);
@@ -104,3 +94,21 @@ $(".emailInput").keydown(function Dissapear(){
 $(".passwordInput").keydown(function (){
   Dissapear();
 })
+//JSON-----------------------------------------------------------------------------------------------------
+//Marketing------------------------------------------------------------------------------------------------
+function Parallax(child){
+  var
+  matrix= $(child).css("transform"),
+  matrixValues = matrix.match(/matrix.*\((.+)\)/)[1].split(', ');
+  //
+  $(".marketing1").on("mousemove" ,function (event){
+      var X=parseInt(matrixValues[4])+event.pageX/50;
+      var Y=parseInt(matrixValues[5])+event.pageY/50;
+
+      $(child).css("transform", "matrix(1, 0, 0, 1, "+ X +", "+ Y +")");
+  })
+};
+$(".marketing1").children(".col-sm-6").each(function (){
+  Parallax(".marketing1Col");
+});
+//Marketing------------------------------------------------------------------------------------------------

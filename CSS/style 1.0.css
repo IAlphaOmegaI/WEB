@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* :root{
+	$font1:"Open Sans";
+} */
 *{
 	margin: 0;
 	padding: 0;
@@ -9,20 +12,12 @@ h3{
 	font-weight: 700;
 }
 body{
+	/* background-color: #f2f2f2; */
 	font-family: 'Open Sans', sans-serif;
 }
 h5{
 	display: inline-block;
 }
-/* .main{
-	z-index: -10; */
-	/* position: absolute; */
-	/* height: 100%;
-	width: 100%; */
-	/* filter: blur(0px); */
-	/* color: #ccc; */
-	/* filter: blur(8px);
-} */
 .row{
 	position: relative;
 }
@@ -52,9 +47,7 @@ h5{
 .absoluteBttn{
 	width: 30px;
 	height: 30px;
-	/* margin-right: 10px; */
-	/* margin-bottom: 20px; */
-	/* transform: translate(-50%, -50%); */
+
 }
 .absolute.active img:not(.absoluteBttn){
 	width:100%;
@@ -65,12 +58,18 @@ h5{
 	margin-left: 26rem;
 }
 .navbar{
-	background-color:rgba(255, 255, 255, 0.782);
-	border-radius: 2rem;
+	/* background-color:rgba(255, 255, 255, 0.782); */
+	/* border-radius: 2rem; */
 	font-family: 'Space Grotesk', sans-serif;
-	margin: 0;
-	position: fixed;
-	z-index: 10;
+	/* margin: 0; */
+	/* position: fixed; */
+	/* z-index: 10; */
+}
+.nav-link{
+	color: white;
+}
+.nav-link active{
+	color: grey;
 }
 .btn1{
 	margin:5% 3% 5% 0;
@@ -80,7 +79,7 @@ h5{
 	position: relative;
 	top: 35%;
 }
-.dropdown-col{
+/* .dropdown-col{
 	justify-content: center;
 	border-style: solid;
 	border-radius: 1rem;
@@ -94,7 +93,7 @@ h5{
 	border-width: 1px 1px 0 1px;
 	text-align: center;
 	font-family: 'Open Sans',sans-serif;
-}
+} */
 .dropdown-header{
 	color: rgb(23, 47, 120);
 	text-align: center;
@@ -105,6 +104,7 @@ h5{
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 3rem;
 	padding-top: 9rem;
+	/* background-color: #f2f2f2; */
 }
 .fa-bitcoin{
 	float: left;
@@ -167,20 +167,14 @@ h5{
 .image-middle:hover{
 	background-color: rgba(137, 43, 226, 0.651);
 }
-.l{
-	background-color:rgba(204, 204, 204, 0.332);
-	border-radius: 2rem;
-}
+/* .l{
+	/* background-color:rgba(204, 204, 204, 0.332);
+	border-radius: 2rem; */
+/* } */ 
 .accordition{
 	font-family: 'Space Grotesk', sans-serif;
 }
-/* .middle-col{
-	border-style: solid;
-	border-top: 2px;
-	border-bottom: 2px;
-	border-color: rgb(0, 94, 255);
-	border-start-start-radius: 20;
-} */
+
 .p{ 
 	text-align: center;
 }
@@ -195,11 +189,11 @@ body {
     animation: gradient 30s ease infinite;
     background-attachment: fixed;
     background-size: 400% 400%;
-    background: rgb(34,108,91);
+    background: rgb(130, 73, 199);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: auto;
     overflow: auto;
-background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%, rgba(147,88,56,1) 59%, rgba(50,210,244,1) 100%);
+/* background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%, rgba(147,88,56,1) 59%, rgba(50,210,244,1) 100%); */
 }
 @keyframes gradient {
     0% {
@@ -375,4 +369,22 @@ nav img{
 		padding-top: 0px;
 		width: 200px;
 	}
+  }
+
+  .marketing1Col{
+	text-align: center;
+	transform: translate(0, 0);
+  }
+  .marketing1Col img{
+	height: 128px;
+	width: 128px;
+  }
+  .marketing1Col p{
+	background-color: #f2f2f298;
+	padding: 5px;
+	border-radius: 3px;
+  }
+  .marketing1 h1{
+	font-family: "Open Sans";
+	margin: 30px 0;
   }
