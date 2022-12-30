@@ -269,4 +269,25 @@ html body #footer .container-fluid .marketing .row .col .contents h2 span {
 html body #footer .container-fluid .marketing .row .col img {
   height: 600px;
   width: auto;
+}
+html body #footer .footer .row .col {
+  padding: 0 20px;
+}
+html body #footer .footer .row .col h2 {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+html body #footer .footer .row .col h3 {
+  font-size: 16px;
+  font-family: "Manrope";
+}
+html body #footer .footer .row .col .fa-brands {
+  height: 26px;
+  width: 30px;
+}
+html body #footer .footer .row .col img {
+  height: 45px;
+  width: 130px;
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */

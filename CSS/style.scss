@@ -305,6 +305,31 @@ html{
                     }
                 }
             }
+            .footer{
+                .row{
+                    .col{
+                        padding: 0 20px;
+                        h2{
+                            font-size: 18px;
+                            font-family: $main-font;
+                            font-weight: 600;
+                        }
+                        h3{
+                            font-size: 16px;
+                            font-family: $secondary-font;
+                         }
+                         .fa-brands{
+                            height: 26px;
+                            width: 30px;
+                         }
+                         img{
+                            height: 45px;
+                            width: 130px;
+                            margin: 10px 0;
+                         }
+                    }
+                }
+            }
         }
     }
 }
