@@ -53,7 +53,6 @@ $.ajax({
         ePattern.test(email) && (pattern.test(password))
         ? function () {
           $.each(json.users, function(key, value){
-            // console.log(value.email)
             if (email==value.email && (password==value.password))
             {
               errorOutput.text("Logged In");
@@ -101,14 +100,18 @@ function Parallax(child){
   matrix= $(child).css("transform"),
   matrixValues = matrix.match(/matrix.*\((.+)\)/)[1].split(', ');
   //
-  $(".marketing1").on("mousemove" ,function (event){
+  $("#between").on("mousemove" ,function (event){
       var X=parseInt(matrixValues[4])+event.pageX/50;
       var Y=parseInt(matrixValues[5])+event.pageY/50;
 
       $(child).css("transform", "matrix(1, 0, 0, 1, "+ X +", "+ Y +")");
   })
 };
-$(".marketing1").children(".col-sm-6").each(function (){
-  Parallax(".marketing1Col");
-});
+// Parallax(".col");
+$("#between").children(".row").children(".col").each(function (i,j){
+  console.log(i,j);
+  Parallax(".col"+(i+1));
+
+})
+
 //Marketing------------------------------------------------------------------------------------------------

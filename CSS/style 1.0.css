@@ -3,7 +3,7 @@
 /* :root{
 	$font1:"Open Sans";
 } */
-*{
+/* *{
 	margin: 0;
 	padding: 0;
 }
@@ -13,15 +13,15 @@ h3{
 }
 body{
 	/* background-color: #f2f2f2; */
-	font-family: 'Open Sans', sans-serif;
-}
-h5{
+	/* font-family: 'Open Sans', sans-serif; */
+/* } */
+/* h5{
 	display: inline-block;
 }
 .row{
 	position: relative;
-}
-.absolute{
+}  */
+/* .absolute{
 	position: absolute; 
 	padding: 2rem;
 	top: 50%;
@@ -30,7 +30,6 @@ h5{
 	display: none;
 }
 .absolute.active{
-	/* z-index: 2000; */
 	position: fixed;
 	display:flex;
 	flex-flow:column;
@@ -52,33 +51,27 @@ h5{
 .absolute.active img:not(.absoluteBttn){
 	width:100%;
 	height: auto;
-}
-.list{
+} */
+/* .list{
 	color: #ffff;
 	margin-left: 26rem;
 }
 .navbar{
 	/* background-color:rgba(255, 255, 255, 0.782); */
 	/* border-radius: 2rem; */
-	font-family: 'Space Grotesk', sans-serif;
+	/* font-family: 'Space Grotesk', sans-serif; */
 	/* margin: 0; */
 	/* position: fixed; */
 	/* z-index: 10; */
-}
-.nav-link{
+/* } */
+/* .nav-link{
 	color: white;
 }
 .nav-link active{
 	color: grey;
 }
-.btn1{
-	margin:5% 3% 5% 0;
-}
-.dropdown-el{
-	font-size: .8rem;
-	position: relative;
-	top: 35%;
-}
+
+
 /* .dropdown-col{
 	justify-content: center;
 	border-style: solid;
@@ -94,98 +87,52 @@ h5{
 	text-align: center;
 	font-family: 'Open Sans',sans-serif;
 } */
-.dropdown-header{
-	color: rgb(23, 47, 120);
-	text-align: center;
-	font-weight: 800;
-	font-size: 1.3rem;
-}
-.p{
+/* .dropdown-el{
+	font-size: .8rem;
+	position: relative;
+	top: 35%;
+}  */
+
+/* .p{
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 3rem;
 	padding-top: 9rem;
 	/* background-color: #f2f2f2; */
-}
-.fa-bitcoin{
-	float: left;
-}
-.feautures-p{
-	font-family: 'Open Sans',sans-serif;
-}
-.fa-solid {
-	position: relative;
-	top: 10px;
-}
-.fa-brands{
-	margin-right: 6px;
-}
-.image1{
+/* } */ 
+
+
+
+
+/* .image1{
 	height: 5rem;
 	width: 5rem;
-}
-#middle{
+} */
+/* #middle{
 	background-color: rgba(204, 204, 204, 0.332);
-	font-family: 'Space-Grotesk';
-}
-.row{
+
+} */
+/* .row{
 	padding: 0 1rem;
-}
-.container-fluid{
-	padding: 5px 2rem;
-	font-family: 'Space Grotesk', sans-serif;
-}
-.navbar{
+} */
+
+/* .navbar{
 	font-family:'Space Grotesk', sans-serif;
-}
-.img{
-	bottom: 1rem;
-	height: 26rem;
-	margin: 1rem auto 1rem auto;
-	position: relative;
-	width: 19rem;
-}
-.div1{
+} */
+
+/* .div1{
 	left: 0;
 	position: relative;
 	top: 0;
-}
-.imgdiv{
-	text-align: center;
-}
-.image-middle-inside{
-	text-align: center;
-}
-.image-middle{
-	background-color: rgba(85, 209, 231, 0.659);
-	border-radius: 50%;
-	height: 10rem;
-	left: 6.5rem;
-	margin: 3rem auto 2rem auto;
-	padding: 1rem;
-	width: 10rem;
-}
-.image-middle:hover{
-	background-color: rgba(137, 43, 226, 0.651);
-}
+} */
+
+
 /* .l{
 	/* background-color:rgba(204, 204, 204, 0.332);
 	border-radius: 2rem; */
 /* } */ 
-.accordition{
-	font-family: 'Space Grotesk', sans-serif;
-}
 
-.p{ 
-	text-align: center;
-}
-.head{
-	background-position: center ;
-	background-size: cover;
-	min-height: 100vh;
-	min-width: 100%;
-	position: relative;
-}
-body {
+
+/* body {
     animation: gradient 30s ease infinite;
     background-attachment: fixed;
     background-size: 400% 400%;
@@ -194,8 +141,8 @@ body {
     margin: auto;
     overflow: auto;
 /* background: radial-gradient(circle, rgba(34,108,91,1) 0%, rgba(101,9,121,1) 35%, rgba(147,88,56,1) 59%, rgba(50,210,244,1) 100%); */
-}
-@keyframes gradient {
+/* } */
+/* @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
@@ -215,16 +162,16 @@ body {
 	z-index: 10;
     /* border-radius: 1rem; */
     /* border: black 3px solid; */
-    background-color: #ffffff6d;
+    /* background-color: #ffffff6d;
     left: 57.188rem;
     top: 4.5rem;
     width: 14rem;
-}
-.searchListInner{
+} */
+/* .searchListInner{
 	/* padding-top: 5px; */
-	list-style-type: square;
-}
-.wave {
+	/* list-style-type: square; */
+/* } */ 
+/* .wave {
     animation: wave 10s -3s linear infinite;
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
@@ -239,7 +186,7 @@ body {
 }
 body.active{
 	overflow: hidden;
-}
+}  */
 .secondary{
 	display:none;
 }
