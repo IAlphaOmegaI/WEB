@@ -6,6 +6,7 @@ $main-font:'Open Sans';
 $secondary-font:'Manrope';
 $main-color:#00dade;
 $secondary-color:#FC00FF; 
+
 //
 *{
     margin: 0;
@@ -125,7 +126,7 @@ html{
                 background-color: $main-color;
             }
             .row{
-                .col1, .col3, .col5{
+                .animatedOdd{
                     position: relative;
                     right: 600px;
                     animation-name: betweenCol;
@@ -136,7 +137,7 @@ html{
                         to{right:0}
                     }
                 }     
-                   .col2, .col4, .col6{
+                   .animatedEven{
                     position: relative;
                     left: 600px;
                     animation-name: betweenCol2;
@@ -194,28 +195,28 @@ html{
                 padding: 0 60px;
                 display: flex;
                 justify-content: space-around;
+                .animation{
+                    animation-timing-function: linear;
+                    animation-name: container;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                    @keyframes container {
+                        from{     
+                            top: 100px;}
+                        to{
+                            top: 0;
+                        }
+                    }
+                }
                 .r{
                     background-color:  rgba(85, 209, 231, 0.659);
                     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
                     position: relative;
+                    top: 100px;
                     width: 320px;
                     border-radius: 2rem;
                     margin: 0 0 80px 0;
-                    animation-name: container;
-                    animation-duration: 2s;
-                    animation-fill-mode: forwards;
-                    opacity: 0;
-                    top: 100px;
-                    @keyframes container {
-                        from{     
-                            opacity: 0;
-                            top: 100px;}
-                        to{
-                            opacity: 100;
-                            top: 0;
-                        }
-                        
-                    }
+              
                     .par{
                         margin: 16px;
                     }
@@ -240,9 +241,9 @@ html{
                 }
             }
             .accordition{
-                background-color: rgba(0, 218, 222, 0.9);
+                background-color: $main-color;
                 font-family: $secondary-font;
-                .table{
+                .animationTable{
                     position: relative;
                     top: 200px;
                     animation-name: table;
@@ -252,6 +253,8 @@ html{
                         from{top: 200px;}
                         to{top:0}
                     }
+                }
+                .table{
                 font-family: $secondary-font;
                 .tableheader{
                     font-family: $main-font;
@@ -343,7 +346,6 @@ html{
                                 to{left:0}
                             }
                         }
-
                         .col{
                             padding: 0 30px !important;
                             display: flex;

@@ -103,15 +103,62 @@ function Parallax(child){
   $("#between").on("mousemove" ,function (event){
       var X=parseInt(matrixValues[4])+event.pageX/50;
       var Y=parseInt(matrixValues[5])+event.pageY/50;
-
       $(child).css("transform", "matrix(1, 0, 0, 1, "+ X +", "+ Y +")");
   })
 };
-// Parallax(".col");
-$("#between").children(".row").children(".col").each(function (i,j){
-  console.log(i,j);
-  Parallax(".col"+(i+1));
-
-})
-
+Parallax(".colOdd");
+Parallax(".colEven");
 //Marketing------------------------------------------------------------------------------------------------
+//Animation------------------------------------------------------------------------------------------------
+$(document).ready(function(){
+  $(window).scroll(function(){
+    //
+    console.log($(window).scrollTop());
+    //
+    $(window).scrollTop()>=366
+    ? $(".r").addClass("animation")
+    : console.log("error");
+    //
+    $(window).scrollTop() >=920
+    ?()=>{
+      $(".colOdd").addClass("animatedOdd");
+      $(".colEven").addClass("animatedEven");
+    }
+    : console.log("error");
+    //
+    ($(window).scrollTop() >=3070)
+     ? $(".table").addClass("animationTable")
+    : console.log("error");
+    //
+    
+
+
+  })
+})
+  // var animationName,
+  // animationDuration,
+  // directionOfAnimation,
+  // value,
+  // secondaryValue;
+  // function AnimationClass(selector,animationName,animationDuration,directionOfAnimation,value,secondaryValue){
+  //   $(selector).css({
+  //     "animation-name":animationName,
+  //     "animation-duration":animationDuration,
+  //     directionOfAnimation: value+"px",
+  //   })
+  // }
+  //
+  // animation-name: --animation-name;
+  // animation-duration: --animation-duration;
+  // animation-fill-mode: forwards;
+  // --direction:--value;
+  // // top: 100px;
+  // @keyframes container {
+  //     from{     
+  //         --direction:--value;}
+  //     to{
+  //         --direction:--secondaryValue;
+  //     }
+  // }
+// }
+//Animation------------------------------------------------------------------------------------------------

@@ -111,7 +111,7 @@ html body #between .row-yellow {
   padding: 0;
   background-color: #00dade;
 }
-html body #between .row .col1, html body #between .row .col3, html body #between .row .col5 {
+html body #between .row .animatedOdd {
   position: relative;
   right: 600px;
   -webkit-animation-name: betweenCol;
@@ -137,7 +137,7 @@ html body #between .row .col1, html body #between .row .col3, html body #between
     right: 0;
   }
 }
-html body #between .row .col2, html body #between .row .col4, html body #between .row .col6 {
+html body #between .row .animatedEven {
   position: relative;
   left: 600px;
   -webkit-animation-name: betweenCol2;
@@ -209,41 +209,40 @@ html body .middle .l {
   display: flex;
   justify-content: space-around;
 }
-html body .middle .l .r {
-  background-color: rgba(85, 209, 231, 0.659);
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
-  position: relative;
-  width: 320px;
-  border-radius: 2rem;
-  margin: 0 0 80px 0;
+html body .middle .l .animation {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-animation-name: container;
           animation-name: container;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
-  top: 100px;
 }
 @-webkit-keyframes container {
   from {
-    opacity: 0;
     top: 100px;
   }
   to {
-    opacity: 100;
     top: 0;
   }
 }
 @keyframes container {
   from {
-    opacity: 0;
     top: 100px;
   }
   to {
-    opacity: 100;
     top: 0;
   }
+}
+html body .middle .l .r {
+  background-color: rgba(85, 209, 231, 0.659);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
+  position: relative;
+  top: 100px;
+  width: 320px;
+  border-radius: 2rem;
+  margin: 0 0 80px 0;
 }
 html body .middle .l .r .par {
   margin: 16px;
@@ -267,10 +266,10 @@ html body .middle .l .r p {
   font-family: "Open Sans";
 }
 html body .middle .accordition {
-  background-color: rgba(0, 218, 222, 0.9);
+  background-color: #00dade;
   font-family: "Manrope";
 }
-html body .middle .accordition .table {
+html body .middle .accordition .animationTable {
   position: relative;
   top: 200px;
   -webkit-animation-name: table;
@@ -279,7 +278,6 @@ html body .middle .accordition .table {
           animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  font-family: "Manrope";
 }
 @-webkit-keyframes table {
   from {
@@ -296,6 +294,9 @@ html body .middle .accordition .table {
   to {
     top: 0;
   }
+}
+html body .middle .accordition .table {
+  font-family: "Manrope";
 }
 html body .middle .accordition .table .tableheader {
   font-family: "Open Sans";
