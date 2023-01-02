@@ -6,6 +6,23 @@
   padding: 0;
 }
 
+.secondary {
+  display: none;
+}
+
+.secondary.active {
+  position: fixed;
+  filter: blur(100px);
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .container-fluid {
   padding: 5px 2rem;
   font-family: "Open Sans", sans-serif;
@@ -15,6 +32,7 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 html body {
+  height: 2000px;
   overflow-x: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -93,6 +111,58 @@ html body #between .row-yellow {
   padding: 0;
   background-color: #00dade;
 }
+html body #between .row .col1, html body #between .row .col3, html body #between .row .col5 {
+  position: relative;
+  right: 600px;
+  -webkit-animation-name: betweenCol;
+          animation-name: betweenCol;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes betweenCol {
+  from {
+    right: 600px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes betweenCol {
+  from {
+    right: 600px;
+  }
+  to {
+    right: 0;
+  }
+}
+html body #between .row .col2, html body #between .row .col4, html body #between .row .col6 {
+  position: relative;
+  left: 600px;
+  -webkit-animation-name: betweenCol2;
+          animation-name: betweenCol2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes betweenCol2 {
+  from {
+    left: 600px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes betweenCol2 {
+  from {
+    left: 600px;
+  }
+  to {
+    left: 0;
+  }
+}
 html body #between .row .col-between div {
   text-align: right;
 }
@@ -141,9 +211,39 @@ html body .middle .l {
 }
 html body .middle .l .r {
   background-color: rgba(85, 209, 231, 0.659);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
+  position: relative;
   width: 320px;
   border-radius: 2rem;
   margin: 0 0 80px 0;
+  -webkit-animation-name: container;
+          animation-name: container;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  top: 100px;
+}
+@-webkit-keyframes container {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 100;
+    top: 0;
+  }
+}
+@keyframes container {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 100;
+    top: 0;
+  }
 }
 html body .middle .l .r .par {
   margin: 16px;
@@ -170,11 +270,38 @@ html body .middle .accordition {
   background-color: rgba(0, 218, 222, 0.9);
   font-family: "Manrope";
 }
-html body .middle .accordition .tableheader {
+html body .middle .accordition .table {
+  position: relative;
+  top: 200px;
+  -webkit-animation-name: table;
+          animation-name: table;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-family: "Manrope";
+}
+@-webkit-keyframes table {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes table {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 0;
+  }
+}
+html body .middle .accordition .table .tableheader {
   font-family: "Open Sans";
   margin: 10px;
 }
-html body .middle .accordition .row .col, html body .middle .accordition .row .dropdown-col {
+html body .middle .accordition .table .row .col, html body .middle .accordition .table .row .dropdown-col {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
   justify-content: center;
@@ -183,32 +310,32 @@ html body .middle .accordition .row .col, html body .middle .accordition .row .d
   border-width: 1px 0;
   vertical-align: middle;
 }
-html body .middle .accordition .row .col .fa-brands, html body .middle .accordition .row .dropdown-col .fa-brands {
+html body .middle .accordition .table .row .col .fa-brands, html body .middle .accordition .table .row .dropdown-col .fa-brands {
   margin-right: 6px;
 }
-html body .middle .accordition .row .col .dropdown-el, html body .middle .accordition .row .dropdown-col .dropdown-el {
+html body .middle .accordition .table .row .col .dropdown-el, html body .middle .accordition .table .row .dropdown-col .dropdown-el {
   font-size: 0.8rem;
   position: relative;
   top: 35%;
 }
-html body .middle .accordition .row .col .dropdown-header, html body .middle .accordition .row .dropdown-col .dropdown-header {
+html body .middle .accordition .table .row .col .dropdown-header, html body .middle .accordition .table .row .dropdown-col .dropdown-header {
   color: rgb(23, 47, 120);
   text-align: center;
   font-weight: 800;
   font-size: 1.3rem;
 }
-html body .middle .accordition .row .col button, html body .middle .accordition .row .dropdown-col button {
+html body .middle .accordition .table .row .col button, html body .middle .accordition .table .row .dropdown-col button {
   background-color: rgba(252, 231, 0, 0.8235294118);
   color: black;
   margin: 3px;
 }
-html body .middle .accordition .dropdownMenu {
+html body .middle .accordition .table .dropdownMenu {
   background-color: rgba(255, 255, 255, 0.911);
   border-radius: 3px;
   margin: 5px 0;
   padding: 5px 0;
 }
-html body .middle .accordition .dropdownMenu .dropdown-col1 {
+html body .middle .accordition .table .dropdownMenu .dropdown-col1 {
   text-align: center;
   vertical-align: middle;
   display: flex;
@@ -232,6 +359,58 @@ html body #footer .container-fluid .marketing .cyanRow .col img {
 }
 html body #footer .container-fluid .marketing .cyanRow .col h3 {
   font-size: 20px !important;
+}
+html body #footer .container-fluid .marketing .row .col1 {
+  position: relative;
+  right: 600px;
+  -webkit-animation-name: marketingCol1;
+          animation-name: marketingCol1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes marketingCol1 {
+  from {
+    right: 600px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes marketingCol1 {
+  from {
+    right: 600px;
+  }
+  to {
+    right: 0;
+  }
+}
+html body #footer .container-fluid .marketing .row .col2 {
+  position: relative;
+  left: 600px;
+  -webkit-animation-name: marketingCol2;
+          animation-name: marketingCol2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes marketingCol2 {
+  from {
+    left: 600px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes marketingCol2 {
+  from {
+    left: 600px;
+  }
+  to {
+    left: 0;
+  }
 }
 html body #footer .container-fluid .marketing .row .col {
   padding: 0 30px !important;
@@ -270,6 +449,9 @@ html body #footer .container-fluid .marketing .row .col img {
   height: 600px;
   width: auto;
 }
+html body #footer .footer {
+  background-color: #00dade;
+}
 html body #footer .footer .row .col {
   padding: 0 20px;
 }
@@ -290,4 +472,34 @@ html body #footer .footer .row .col img {
   height: 45px;
   width: 130px;
   margin: 10px 0;
+}
+html body #footer .coins h1 {
+  display: inline-block;
+  color: rgba(252, 231, 0, 0.8235294118);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: #FC00FF;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.593);
+}
+html body #footer .coins .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+html body #footer .coins .row .col {
+  padding: 0 10px;
+  text-align: center;
+}
+html body #footer .coins .row .col img {
+  height: 250px;
+  width: 250px;
+}
+html body #footer .coins .row .col h3 {
+  margin: 20px;
+  font-family: "Open Sans";
 }/*# sourceMappingURL=style.css.map */

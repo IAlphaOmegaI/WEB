@@ -5,12 +5,26 @@
 $main-font:'Open Sans';
 $secondary-font:'Manrope';
 $main-color:#00dade;
-
 $secondary-color:#FC00FF; 
 //
 *{
     margin: 0;
     padding: 0;
+}
+.secondary{
+	display:none;
+}
+.secondary.active{
+	position:fixed;
+	filter:blur(100px);
+	width:100%;
+	height:100%;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	z-index:11;
+	display:block;
+	background:rgba(0, 0, 0 , 0.7)
 }
 .container-fluid{
 	padding: 5px 2rem;
@@ -19,7 +33,7 @@ $secondary-color:#FC00FF;
 html{
     font-family: $main-font, sans-serif;
     body{
-        // overflow-x: hidden;
+        height: 2000px;
         .absolute{
             position: absolute; 
             padding: 2rem;
@@ -111,6 +125,28 @@ html{
                 background-color: $main-color;
             }
             .row{
+                .col1, .col3, .col5{
+                    position: relative;
+                    right: 600px;
+                    animation-name: betweenCol;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    @keyframes betweenCol {
+                        from{right:600px}
+                        to{right:0}
+                    }
+                }     
+                   .col2, .col4, .col6{
+                    position: relative;
+                    left: 600px;
+                    animation-name: betweenCol2;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    @keyframes betweenCol2 {
+                        from{left:600px}
+                        to{left:0}
+                    }
+                }
                 .col-between{
                     div{
                         text-align: right;
@@ -160,10 +196,26 @@ html{
                 justify-content: space-around;
                 .r{
                     background-color:  rgba(85, 209, 231, 0.659);
-                    // box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
+                    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.488);
+                    position: relative;
                     width: 320px;
                     border-radius: 2rem;
                     margin: 0 0 80px 0;
+                    animation-name: container;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
+                    top: 100px;
+                    @keyframes container {
+                        from{     
+                            opacity: 0;
+                            top: 100px;}
+                        to{
+                            opacity: 100;
+                            top: 0;
+                        }
+                        
+                    }
                     .par{
                         margin: 16px;
                     }
@@ -184,12 +236,22 @@ html{
                     }
                     p{
                         font-family:$main-font;
-                      
                     }
                 }
             }
             .accordition{
                 background-color: rgba(0, 218, 222, 0.9);
+                font-family: $secondary-font;
+                .table{
+                    position: relative;
+                    top: 200px;
+                    animation-name: table;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    @keyframes table {
+                        from{top: 200px;}
+                        to{top:0}
+                    }
                 font-family: $secondary-font;
                 .tableheader{
                     font-family: $main-font;
@@ -211,7 +273,6 @@ html{
                         font-size: .8rem;
                         position: relative;
                         top: 35%;
-                        
                     } 
                     .dropdown-header{
                         color: rgb(23, 47, 120);
@@ -240,6 +301,7 @@ html{
                 }
             }
         }
+        }
         #footer{
             position: relative;
             bottom: 400px;
@@ -257,11 +319,31 @@ html{
                                 font-size: 20px !important;
                             }
                         }
-
-
                     }
                     .row{
-                      
+                        .col1{
+                            position: relative;
+                            right: 600px;
+                            animation-name: marketingCol1;
+                            animation-duration: 3s;
+                            animation-fill-mode: forwards;
+                            @keyframes marketingCol1 {
+                                from{right:600px}
+                                to{right:0}
+                            }
+                        }
+                        .col2{
+                            position: relative;
+                            left: 600px;
+                            animation-name: marketingCol2;
+                            animation-duration: 3s;
+                            animation-fill-mode: forwards;
+                            @keyframes marketingCol2 {
+                                from{left:600px}
+                                to{left:0}
+                            }
+                        }
+
                         .col{
                             padding: 0 30px !important;
                             display: flex;
@@ -277,7 +359,6 @@ html{
                                 color:white;
                                 font-family:$main-font;
                                 margin-left: 7px;
-
                             }
                             h1{
                                 font-size: 60px;
@@ -306,6 +387,7 @@ html{
                 }
             }
             .footer{
+                background-color: $main-color;
                 .row{
                     .col{
                         padding: 0 20px;
@@ -327,6 +409,38 @@ html{
                             width: 130px;
                             margin: 10px 0;
                          }
+                    }
+                }
+            }
+            .coins{
+                h1{
+                    display: inline-block;
+                    color: #fce700d2;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    font-size: 50px;
+                    font-family: $main-font;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    background-color: $secondary-color;
+                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.593);
+            }
+                    .row{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    .col{
+                        padding: 0 10px;
+                        text-align: center;
+                        img{
+                            height: 250px;
+                            width: 250px;
+                        }
+                        h3{
+                            margin: 20px;
+                            font-family: $main-font;
+                        }
                     }
                 }
             }
