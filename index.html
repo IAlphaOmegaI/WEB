@@ -1,504 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- <link rel="stylesheet" type="text/css" href="CSS/style 1.0.css"> -->
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	<title>Web Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Generated Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./Styles/index-styles/style.css" />
+    <title>Project</title>
 </head>
 <body>
-		<div class="wave"></div>
-		<div class="wave"></div>
-		<div class="wave"></div>
-	</div>
-	<div class="main">
-	<section id="header">
-<div class="container-fluid">
-	<nav class="navbar navbar-expand-lg">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="https://cdn-icons-png.flaticon.com/512/8061/8061450.png" class="image1">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="list ml-auto me-auto navbar-nav mb-2 mb-lg-0">
-					<li class="nav-item">
-					  <a class="nav-link active" aria-current="page" href="#">HOME</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="login.html">LOG IN</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">PROFILE</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">ABOUT US</a>
-					<li class="nav-item dropdown">
-					  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						MORE
-					  </a>
-					  <ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">FAQ</a></li>
-						<li><a class="dropdown-item" href="#">CONTACT US</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="helpcenter.html">HELP CENTER</a></li>
-					  </ul>
-					</li>
-				  </ul>
-				  <form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
-				  </form>	
-				  <div class="searchList">
-					<ul class="searchListInner">
-					</ul>
-				</div>
-			  </div>
-		</div>
-	</nav>
-	<div class="row p">
-		<div class="col-md-6 col-sm-12">
-			<h1 class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-			<button type="button" class="btn1 btn btn-dark btn-lg"><i class="fa-brands fa-google-play"></i>Download</button>
-			<button type="button" class="btn1 btn btn-outline-light btn-lg"><i class="fa-brands fa-apple"></i>Download</button>
-		</div>
-		<div class="imgdiv div1 col-md-6 col-sm-12 p">
-			<img class= "img" src="Assets/Image.png" alt="">
-		</div>
-	</div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L34.3,208C68.6,224,137,256,206,245.3C274.3,235,343,181,411,144C480,107,549,85,617,101.3C685.7,117,754,171,823,181.3C891.4,192,960,160,1029,160C1097.1,160,1166,192,1234,202.7C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-</section>
-<section class="middle">
-	<div class="container-fluid">
-		<div class="row l">
-			<div class="r col col-md-4 col-sm-12">
-				<div class="image-middle-inside">
-					<img src="https://cdn-icons-png.flaticon.com/512/1163/1163474.png" class="image-middle">
-				</div>
-				<h3>Lorem ipsum dolor sit amet.</h3>
-				<p class="feautures-p par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur in purus a iaculis.  Proin aliquet condimentum nunc, ut ultricies ligula semper quis. Suspendisse et velit eu urna pellentesque sollicitudin. Mauris maximus ut nulla eu convallis. </p>
-			</div>
-			<div class="r middle-col col col-md-4 col-sm-12">
-				<div class="image-middle-inside">
-					<img src="https://cdn-icons-png.flaticon.com/128/3899/3899406.png" class="image-middle">
-				</div>
-				<h3>Lorem ipsum dolor sit amet.</h3>
-				<p class="feautures-p par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur in purus a iaculis.  Proin aliquet condimentum nunc, ut ultricies ligula semper quis. Suspendisse et velit eu urna pellentesque sollicitudin. Mauris maximus ut nulla eu convallis. </p>
-			</div>
-			<div class="r col col-md-4 col-sm-12">
-				<div class="image-middle-inside">
-					<img src="https://cdn-icons-png.flaticon.com/512/3188/3188148.png" class="image-middle">
-				</div>
-				<h3>Lorem ipsum dolor sit amet.</h3>
-				<p class="feautures-p par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur in purus a iaculis.  Proin aliquet condimentum nunc, ut ultricies ligula semper quis. Suspendisse et velit eu urna pellentesque sollicitudin. Mauris maximus ut nulla eu convallis. </p>
-			</div>
-		</div>
-	</div>
-	<section id="between">
-		<div class="row">
-			<div class="col colOdd">
-				<img src="./Assets/encryption.gif">
-			</div>
-				<div class="col colEven">
-					<div>
-						<h4>Peace of Mind</h4>
-						<h1>Your security is <span>OUR</span> priority!</h1>
-						<p>We operate with three layers of security feautures, encryption and authentication using your own personal Biometric Data!</p>
-					</div>
-			</div>
-			</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00dade" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,288C274.3,299,343,309,411,293.3C480,277,549,235,617,208C685.7,181,754,171,823,192C891.4,213,960,267,1029,272C1097.1,277,1166,235,1234,213.3C1302.9,192,1371,192,1406,192L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-		<div class="row row-yellow">
-				<div class="col col-between colOdd">
-					<div>
-						<h4>Peace of Mind</h4>
-						<h1>Your security is <span>OUR</span> priority!</h1>
-						<p>We operate with three layers of security feautures, encryption and authentication using your own personal Biometric Data!</p>
-					</div>
-				</div>
-				<div class="col colEven">
-					<img src="./Assets/connection.png">
-				</div>
-		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00dade" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,288C274.3,299,343,309,411,293.3C480,277,549,235,617,208C685.7,181,754,171,823,192C891.4,213,960,267,1029,272C1097.1,277,1166,235,1234,213.3C1302.9,192,1371,192,1406,192L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
-		<div class="row">
-			<div class="col colOdd">
-				<img src="./Assets/line-chart.gif">
-			</div>
-				<div class="col colEven">
-					<div>
-						<h4>Peace of Mind</h4>
-						<h1>Your security is <span>OUR</span> priority!</h1>
-						<p>We operate with three layers of security feautures, encryption and authentication using your own personal Biometric Data!</p>
-					</div>
-				</div>
-		</div>
-	</section>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00dade" fill-opacity="1" d="M0,64L34.3,58.7C68.6,53,137,43,206,58.7C274.3,75,343,117,411,122.7C480,128,549,96,617,85.3C685.7,75,754,85,823,112C891.4,139,960,181,1029,218.7C1097.1,256,1166,288,1234,272C1302.9,256,1371,192,1406,160L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-	<div class="container-fluid accordition">
-		<div class="table">
-		<h1 class="tableheader">Jump start your Portofolio!</h1>
-		<!--row0-->
-		<div class="row">
-			<div class="col dropdown-col col-lg-4 col-sm-4">
-				<h4 class="dropdown-el dropdown-header">Code</h4>
-			</div>
-			<div class="col dropdown-col col-lg-2 col-sm-4">
-				<h4 class="dropdown-el dropdown-header">Coin Name</h4>
-			</div>
-			<div class="col dropdown-col col-lg-2 col-sm-0">
-				<h4 class=" dropdown-el dropdown-header">Coin Price</h4>
-			</div>
-			<div class="col dropdown-col col-lg-2 col-sm-0">
-				<h4 class="dropdown-el dropdown-header">Market Value</h4>
-			</div>
-			<div class="col dropdown-col col-lg-2 col-sm-4">
-				<button type="button" id="btndropdown0" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-			</div>
-		</div>
-		<!-- <dropdownmenu0-->
-			<div class="row dropdownMenu" id="menu0">
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-				</div>
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<div>
-						<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-						<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-					</div>
-				</div>
-			</div>
-			<!--row1-->
-			<div class="row">
-				<div class="col dropdown-col1 col-lg-4 col-sm-4">
-					<i class="dropdown-el fa-brands fa-bitcoin"></i>
-					<h4 class="dropdown-el ">BTC</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-4">
-					<h4 class="dropdown-el ">Coin 1</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-0">
-					<h4 class=" dropdown-el ">18320,2930 ALL</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-0">
-					<h4 class="dropdown-el ">+1.34%</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-4">
-					<button type="button" id="btndropdown1" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-				</div>
-			</div>
-			<!--dropdown1-->
-			<div class="row dropdownMenu" id="menu1">
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-				</div>
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<div>
-					<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-					</div>
-				</div>
-			</div>
-					<!--row2-->
-					<div class="row">
-						<div class="col dropdown-col1 col-lg-4 col-sm-4">
-							<i class="dropdown-el fa-brands fa-bitcoin"></i>
-							<h4 class="dropdown-el ">BTC</h4>
-						</div>
-						<div class="col dropdown-col1 col-lg-2 col-sm-4">
-							<h4 class="dropdown-el ">Coin 1</h4>
-						</div>
-						<div class="col dropdown-col1 col-lg-2 col-sm-0">
-							<h4 class=" dropdown-el ">18320,2930 ALL</h4>
-						</div>
-						<div class="col dropdown-col1 col-lg-2 col-sm-0">
-							<h4 class="dropdown-el ">+1.34%</h4>
-						</div>
-						<div class="col dropdown-col1 col-lg-2 col-sm-4">
-							<button type="button" id="btndropdown2" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-						</div>
-					</div>
-					<!--dropdown1-->
-					<div class="row dropdownMenu" id="menu2">
-						<div class="col-sm-12 col-lg-6 dropdown-col1">
-							<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-						</div>
-						<div class="col-sm-12 col-lg-6 dropdown-col1">
-							<div>
-							<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-							<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-							</div>
-						</div>
-					</div>
-			<!--row3-->
-			<div class="row">
-				<div class="col dropdown-col1 col-lg-4 col-sm-4">
-					<i class="dropdown-el fa-brands fa-bitcoin"></i>
-					<h4 class="dropdown-el ">BTC</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-4">
-					<h4 class="dropdown-el ">Coin 1</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-0">
-					<h4 class=" dropdown-el ">18320,2930 ALL</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-0">
-					<h4 class="dropdown-el ">+1.34%</h4>
-				</div>
-				<div class="col dropdown-col1 col-lg-2 col-sm-4">
-					<button type="button" id="btndropdown3" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-				</div>
-			</div>
-			<!--dropdown3-->
-			<div class="row dropdownMenu" id="menu3">
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-				</div>
-				<div class="col-sm-12 col-lg-6 dropdown-col1">
-					<div>
-					<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-				    </div>
-				</div>
-			</div>
-				<!--row4-->
-				<div class="row">
-					<div class="col dropdown-col1 col-lg-4 col-sm-4">
-						<i class="dropdown-el fa-brands fa-bitcoin"></i>
-						<h4 class="dropdown-el ">BTC</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-4">
-						<h4 class="dropdown-el ">Coin 1</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-0">
-						<h4 class=" dropdown-el ">18320,2930 ALL</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-0">
-						<h4 class="dropdown-el ">+1.34%</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-4">
-						<button type="button" id="btndropdown4" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-					</div>
-				</div>
-				<!--dropdown4-->
-				<div class="row dropdownMenu" id="menu4">
-					<div class="col-sm-12 col-lg-6 dropdown-col1">
-						<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-					</div>
-					<div class="col-sm-12 col-lg-6 dropdown-col1">
-						<div>
-						<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-						<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-						</div>
-					</div>
-				</div>
-				<!--row5-->
-				<div class="row">
-					<div class="col dropdown-col1 col-lg-4 col-sm-4">
-						<i class="dropdown-el fa-brands fa-bitcoin"></i>
-						<h4 class="dropdown-el ">BTC</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-4">
-						<h4 class="dropdown-el ">Coin 1</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-0">
-						<h4 class=" dropdown-el ">18320,2930 ALL</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-0">
-						<h4 class="dropdown-el ">+1.34%</h4>
-					</div>
-					<div class="col dropdown-col1 col-lg-2 col-sm-4">
-						<button type="button" id="btndropdown5" class="btndropdown btn btn-outline-light btn-md">More Info</button>
-					</div>
-				</div>
-				<!--dropdown5-->
-				<div class="row dropdownMenu" id="menu5">
-					<div class="col-sm-12 col-lg-6 dropdown-col1">
-						<img class="chart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSsaP06YXz2YCy_dxaDtT1IWj4S9MzI-jy3aeeqJtbDmLjYPhtNricwJUyviB0bMCrNU&usqp=CAU"/>
-					</div>
-					<div class="col-sm-12 col-lg-6 dropdown-col1">
-						<div>
-						<h4>Aenean vitae leo sed urna condimentum varius.</h4>
-						<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo sed urna condimentum varius. Aliquam vitae risus interdum, malesuada nunc eu, pretium libero. Cras at molestie velit. Cras id aliquam mi. Nulla eget ultrices purus, eu egestas nunc. Praesent id mi id neque malesuada lobortis. Sed in magna mattis, auctor mauris quis, hendrerit neque. In hac habitasse platea dictumst. Curabitur ornare commodo elit quis sodales. Cras porta placerat libero.</p>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-					<path fill="#00DBDE" fill-opacity="0.9" d="M0,64L34.3,58.7C68.6,53,137,43,206,58.7C274.3,75,343,117,411,122.7C480,128,549,96,617,85.3C685.7,75,754,85,823,112C891.4,139,960,181,1029,218.7C1097.1,256,1166,288,1234,272C1302.9,256,1371,192,1406,160L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
-				  </svg>
-	</div>
-</section>
-<section id="footer">
-	<div class="container-fluid">
-		<div class="marketing">
-			<div class="row">
-				<div class="col col1">
-				<div class="contents">
-					<h5>Crypto Cosmos</h5>
-					<h1>Crypto made Simple</h1>
-					<h2><span>Cosmos Wallet</span> Your Keys. Your Crypto.</h2>
-					<h2><span>Cosmos Wallet</span> Your Keys. Your Crypto.</h2>
-					<h2><span>Cosmos Wallet</span> Your Keys. Your Crypto.</h2>
-				</div>
-				</div>
-				<div class="col col2">
-					<img src="./Assets/phone.png">
-				</div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path fill="#00dade" fill-opacity="0.8" d="M0,288L40,266.7C80,245,160,203,240,170.7C320,139,400,117,480,101.3C560,85,640,75,720,101.3C800,128,880,192,960,186.7C1040,181,1120,107,1200,101.3C1280,96,1360,160,1400,192L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-			  </svg>
-			<div class="row cyanRow">
-				<div class="col">
-					<img src="./Assets/Laptop.png">
-				</div>
-			</div>
-			<div class="row cyanRow">
-				<div class="col">
-					<div class="contents marketingCol">
-						<h1>Luqidity</h1>
-						<h3>Deep order book liquidity in all market conditions</h3>
-					</div>
-					</div>
-					<div class="col">
-					<div class="contents marketingCol">
-						<h1>Speed</h1>
-						<h3>SOC2 Type 1 Compliance</h3>
-						<h3>PCI:DSS 3.2.1 Level 1 compliance</h3>
-						<h3>ISO/IEC 27001:2013</h3>
-						<h3>ISO/IEC 27701:2019</h3>
-						<h3>ISO 22301:2019</h3>
-						<h3>Singapore Data Protection Trust Mark</h3>
-					</div>
-				</div>
-				<div class="col">
-					<div class="contents marketingCol">
-						<h1>Security</h1>
-						<h3>Deep order book liquidity in all market conditions</h3>
-					</div>
-				</div>
-				</div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path fill="#00dade" fill-opacity="0.8" d="M0,288L40,266.7C80,245,160,203,240,170.7C320,139,400,117,480,101.3C560,85,640,75,720,101.3C800,128,880,192,960,186.7C1040,181,1120,107,1200,101.3C1280,96,1360,160,1400,192L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-			  </svg>
-		</div>
-	</div>
-	<div class="coins">
-		<h1>Supported Coins:</h1>
-		<div class="row">
-		
-			<div class="col">
-		<img src="./Assets/ETH.svg">
-		<h3>Etherium</h3>
-		<img src="./Assets/BTC.svg">
-		<h3>Bitcoin</h3>
-			</div>
-			<div class="col">
-		<img src="./Assets/LINK.svg">
-		<h3>ChainLink</h3>
-		<img src="./Assets/USDT.svg">
-		<h3>Tether</h3>
-			</div>
-			<div class="col">
-		<img src="./Assets/ccx-logo-2-1.svg">
-		<h3>Conceal</h3>
-		<img src="./Assets/BAT.svg">
-		<h3>Basic Attention</h3>
-			</div>
-			<div class="col">
-		<img src="./Assets/swipe-sxp-logo.svg">
-		<h3>Swipe</h3>
-		<img src="./Assets/binance-coin-bnb-logo.svg">
-		<h3>Binance</h3>
-			</div>
-	</div>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00dade" fill-opacity="1" d="M0,96L30,96C60,96,120,96,180,106.7C240,117,300,139,360,165.3C420,192,480,224,540,202.7C600,181,660,107,720,117.3C780,128,840,224,900,261.3C960,299,1020,277,1080,245.3C1140,213,1200,171,1260,176C1320,181,1380,235,1410,261.3L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-	<div class="footer">
-		<div class="row">
-			<div class="col">
-				<h2>App</h2>
-				<h3>Buy & Sell</h3>
-				<h3>Crypto earn</h3>
-				<h3>Crypto Credit</h3>
-				<h3>Crypto Cosmos Policy</h3>
-			</div>
-			<div class="col">
-				<h2>Exchange</h2>
-				<h3>Exchange Home</h3>
-				<h3>Margin Trading</h3>
-				<h3>Derivatives Trading</h3>
-				<h3>Copy Trading</h3>
-				<h3>SuperCharger</h3>
-				<h3>Trading Arena</h3>
-			</div>
-			<div class="col">
-				<h2>Rescourses</h2>
-				<h3>Wallet</h3>
-				<h3>Swap</h3>
-				<h3>Earn</h3>
-				<h3>Dashboard</h3>
-			</div>
-			<div class="col">
-				<h2>Learn</h2>
-				<h3>What's trending</h3>
-				<h3>Reviews</h3>
-				<h3>Product News</h3>
-				<h3>Events</h3>
-				<h3>University</h3>
-				<h3>Research</h3>
-				<h3>Market Updates</h3>
-			</div>
-			<div class="col">
-				<h2>Company</h2>
-				<h3>About Us</h3>
-				<h3>Careers</h3>
-				<h3>News</h3>
-				<h3>Security</h3>
-				<h3>Contact</h3>
-				<h3>Capital</h3>
-				<h3>Market</h3>
-				<h3>Affiliate</h3>
-				<h3>Partners</h3>
-				<h3>NFTs</h3>
-			</div>
-			<div class="col">
-				<h2>Cards & Commerce</h2>
-				<h3>Get a VISA metal Card</h3>
-				<h3>Pay for Business</h3>
-			</div>
-			<div class="col">
-				<i class="fa-brands fa-twitter fa-xl"></i>
-				<i class="fa-brands fa-instagram fa-xl"></i>
-				<i class="fa-brands fa-facebook fa-xl"></i>
-				<i class="fa-brands fa-linkedin fa-xl"></i>
-				<i class="fa-brands fa-youtube fa-xl"></i>
-				<i class="fa-brands fa-reddit fa-xl"></i>
-				<i class="fa-brands fa-discord fa-xl"></i>
-				<i class="fa-brands fa-telegram fa-xl"></i>
-				<img src="./Assets/appstore.png"/>
-				<img src="./Assets/playstore.png"/>
-			</div>
-		</div>
-	</div>
-</section>
-</div>
-<div class="absolute">
-	<header><img src="https://cdn-icons-png.flaticon.com/128/5369/5369422.png" class="absoluteBttn"/></header>
-	<div class="absolute-container"></div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="./index.js"></script>  
-<div class="secondary"></div>
+  <div id="headerSection">
+    <sector id="navigation">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CRYPTO COSMOS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HELPCENTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PROFILE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MORE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">MARKET</a></li>
+                  <li><a class="dropdown-item" href="#">GET IN TOUCH</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">COMMUNITY</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success" >LOG IN</button>
+            <button class="btn btn-outline-success" >SIGN UP</button>
+          </div>
+        </div>
+      </nav>
+    </sector>
+    <sector id="header">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="headerContainer">
+              <div class="horizontalLineHeader"></div>
+              <div class="titleHeader">
+                <h1>SCROLL DOWN</h1>
+              </div>
+              <div class="verticalLineHeader"></div>
+              We are CryptoCosmos. Revolutionizing the Market.
+            </div>
+        </div>
+        <div class="row">
+          <div class="subheaderDots">
+          </div>
+        </div>
+      </div>
+    </sector>
+  </div>
+  <sector id="contents">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="contentsContainer">
+            <span id="span1">DeFi</span> <span id="span2">Crypto card</span> payment <span id="span3">infrastructure</span>
+            <p>DeFi crypto card breaches the gap between real-world and blockchain purchases in an unitung and fulfilling manner, giving you, the client the benefits of both!</p>
+          </div>
+          <button>APPLY NOW</button>
+        </div>
+        <div class="col">
+          <img src="./Assets/Images/creditCard.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="numberContainer">
+          <h2>01</h2>
+          <h3>ABOUT US</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="marketingContianer">
+            <h1>Your Security is Our Priority!</h1>
+            <p>We operate with three layers of protective encryption, including authentication, biometric Log In and secure Data Servers. </p>
+            <button>LEARN MORE</button>
+          <div class="marketingDots"></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./Assets/Images/Image4.jpg">
+          <div class="marketingVeritcalLine"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="numberContainer">
+          <h2>02</h2>
+          <h3>OUR MARKET</h3>
+        </div>
+      </div>
+      <div class="horizontallLine"></div>
+      <button>SUPPORTED COINS</button>
+      <div class="verticallLine"></div>
+      <div class="marketingDotsPurple"></div>
+      <div class="row marketRow">
+          <div class="col col-lg-4 imageCol">
+            <img src="./Assets/Images/testImg.png"/>
+          </div>
+          <div class="col col-lg-8">
+            <div class="textContainer">
+              <h1>We use BLOCKCHAIN. The Technology of the Future!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et nibh consectetur, lacinia lacus eu, semper lectus. Donec sed eros aliquet, iaculis lectus in, tempus nisi. Mauris dapibus metus orci, ac malesuada orci egestas in. Integer venenatis cursus consectetur. Quisque convallis velit nec tincidunt volutpat. Integer vitae tortor lacus. Suspendisse a neque accumsan, hendrerit augue quis, mattis purus.</p>
+            </div>
+          </div>
+        </div>
+          <div class="row marketRow">
+            <div class="col col-lg-8">
+              <div class="textContainer">
+              <h1>A Decenterilized System, the System with no Owner!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et nibh consectetur, lacinia lacus eu, semper lectus. Donec sed eros aliquet, iaculis lectus in, tempus nisi. Mauris dapibus metus orci, ac malesuada orci egestas in. Integer venenatis cursus consectetur. Quisque convallis velit nec tincidunt volutpat. Integer vitae tortor lacus. Suspendisse a neque accumsan, hendrerit augue quis, mattis purus.</p>
+              </div>
+            </div>
+            <div class="col col-lg-4 imageCol">
+                <img src="./Assets/Images/test.png"/>
+            </div>
+          </div>
+    </div>
+  </sector>
+    <!-- Generated Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap');
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: local('TT Firs Neue Light'), local('TT-Firs-Neue-Light'),
+        url('../../Assets/Fonts/TTFirsNeue-Light/TTFirsNeue-Light.woff2') format('woff2'),
+        url('../../Assets/Fonts/TTFirsNeue-Light/TTFirsNeue-Light.woff') format('woff'),
+        url('../../Assets/Fonts/TTFirsNeue-Light/TTFirsNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Code';
+    src:url('../../Assets/Fonts/Source-Code-Font/Source-Code-Pro.ttf.svg') format('svg'),
+        url('../../Assets/Fonts/Source-Code-Font/Source-Code-Pro.ttf.woff') format('woff'),
+        url('../../Assets/Fonts/TTFirsNeue-Light/TTFirsNeue-Light.eot') format('eot');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'tt_firs_neue_trlextralight';
+    src: url('../../Assets/Fonts/TT-Firs-Neue-ExtraLight/tt_firs_neue_trial_extralight.woff2') format('woff2'),
+         url('../../Assets/Fonts/TT-Firs-Neue-ExtraLight/tt_firs_neue_trial_extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+// Variables
+$primary-font:'Nunito Sans', sans-serif;
+$secondary-font:'TT Firs Neue',sans-serif;
+$secondary-fontLight:'tt_firs_neue_trlextralight',sans-serif;
+$trenary-font: 'Source Code',sans-serif;
+$primary-color:#43e8e1;
+$secondary-color: #131313;
+$trenary-color:#898f97;
+$quarternary-color:#362985;
+html{
+    body{
+        overflow-x: hidden;
+        font-family: $primary-font;
+        background-color: $secondary-color;
+        #headerSection{
+        background-image: url("../../Assets/Images/headerImg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        width: 100vw;
+        #navigation{
+            nav{
+                background-color: black;
+                padding: 20px 10px;
+                .container-fluid > *{
+                    font-family: $primary-font;
+                    color: $trenary-color;
+                }
+                .container-fluid{
+                    .navbar-brand{
+                        font-weight: 600;
+                        font-size: 22px;
+                    }
+                    .collapse{
+                        .navbar-nav{
+                            .nav-item{
+                                a{
+                                    font-weight: 200;
+                                    font-size: 14px;
+                                    margin: 0 10px;
+                                    color: white;
+                                    letter-spacing: .4em;
+                                }
+                            }
+                        }
+                        button{
+                            color: white;
+                            background-color: black;
+                            border: solid $trenary-color 1px;
+                            border-radius: 0;
+                            width:120px;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+        #header{
+            .container-fluid{
+                .row{
+                    align-items: flex-end;
+                    display: flex;
+                    height: 90vh;
+                    .headerContainer{
+                        letter-spacing: .08em;
+                        color: white;
+                        font-size: 42px;
+                        font-weight: 500;
+                        margin: 0 0 0 100px;
+                        .horizontalLineHeader{
+                            background-color: white;
+                            height: 400px;
+                            position: relative;
+                            right: 40px;
+                            top: 380px;
+                            width: 2px;
+                        }
+                        .verticalLineHeader{
+                            position: relative;
+                            bottom: 18vh;
+                            left: 2vw;
+                            height: 2px;
+                            width: 200px;
+                            background-color: $trenary-color;
+                        }
+                        .titleHeader{
+                            transform: rotate(90deg);
+                            position: relative;
+                            right: 51.5vw;
+                            top: 55vh;
+                            h1{
+                                font-family:$secondary-font;
+                                letter-spacing: .4em;
+                                font-size: 18px;
+                                color: $trenary-color;
+                                :hover{
+                                    color: white;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .subheaderDots{
+                        content: "";
+                        display: block;
+                        width: 28rem;
+                        height: 25rem;
+                        background-image: url(../../Assets/Images/dots.svg);
+                        opacity: .25;
+                        position: relative;
+                        left: 50vw;
+                        bottom: 45vh;
+                        }
+                }
+            }
+        }
+    }
+    #contents{
+        position: relative;
+        top: 30vh;
+        .container-fluid{
+            .marketRow{
+                margin: 60px 0;
+                .imageCol{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        position: absolute;
+                        z-index: 2;
+                        width: 20rem;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+                }
+            }
+            .horizontallLine{
+                height: 2px;
+                width: 60%;
+                background-color: $trenary-color;
+                margin: auto;
+            }
+            .verticallLine{
+                height: 10%;
+                width: 2px;
+                background-color: #362985;
+                position: absolute;
+            }
+            button{
+                font-family: $secondary-fontLight;
+                color: white;
+                background-color: black;
+                border: solid $trenary-color 1px;
+                border-radius: 0;
+                padding: 0 15px;
+                height: 50px;
+                margin-left: 20px;
+                letter-spacing: 0.1rem;
+            }
+            .marketingDotsPurple{
+                position: absolute;
+                left: 50%;
+                margin-top: 30%;
+                content: "";
+                display: block;
+                width: 24rem;
+                height: 68rem;
+                background-image: url(../../Assets/Images/dotsPurple.svg);
+                opacity: .4;
+            }
+            .row{
+                   .numberContainer{
+                    padding: 20px;
+                    h2{
+                        font-family: $trenary-font;
+                        color:rgb(72, 69, 69);
+                        font-size: 200px;
+                        letter-spacing: -30px;
+                    }
+                    h3{
+                        position: relative;
+                        bottom: 5.2rem;
+                        color: $primary-color;
+                        left: 1rem;
+                        letter-spacing: 5px;
+                    }
+                   }
+                .col{
+                    .contentsContainer{
+                       margin: 0 0 0 100px;
+                        #span1{
+                            font-family: $primary-font;
+                            font-weight: 600;
+                            font-size: 55px;
+                        }
+                        #span2{
+                            text-decoration: underline;
+                        }
+                        #span3{
+                            font-family:$secondary-fontLight;
+                        }
+                        font-size: 55px;
+                        color: white;
+                        font-family:$secondary-font;
+                        letter-spacing: .3rem;
+                        line-height:50px;
+                        p{
+                            margin-top: 40px;
+                            letter-spacing: normal;
+                            line-height: normal;
+                            font-size: 16px;
+                            color: $primary-color;
+                        }
+                    }
+                    button{
+                        font-family: $secondary-fontLight;
+                        color: white;
+                        background-color: black;
+                        border: solid $trenary-color 1px;
+                        border-radius: 0;
+                        width:170px;
+                        height: 50px;
+                        margin-left: 100px;
+                        letter-spacing: 0.1rem;
+                    }
+                    img{
+                        margin-top: -90px;
+                    }
+                    .marketingDots{
+                        content: "";
+                        display: block;
+                        width: 34rem;
+                        height: 30rem;
+                        background-image: url(../../Assets/Images/dotsRed.svg);
+                        opacity: .4;
+                    }
+                    .marketingVeritcalLine{
+                        width: 3px;
+                        height: 350px;
+                        background-color: $primary-color;
+                        position: relative;
+                        left: 90%;
+                        bottom:20%;
+                    }
+                    .marketingContianer{
+                        height: 437px;
+                        padding: 40px 20px;
+                        background: linear-gradient(90deg, rgba(141,175,238,1) 18%, rgba(67,232,225,1) 88%);
+                        h1{
+                            font-size: 40px;
+                            font-family: $secondary-font;
+                            letter-spacing: 0.1rem;
+                            color: $quarternary-color;
+                        }
+                        p{
+                            font-size: 25px;
+                            font-weight: 200;
+                            color: black;
+                            margin: 50px 0;
+                            line-height: 27px;
+                        }
+                        button{
+                            margin-left: 0;
+                            border-color: white;
+                        }
+                        .marketingDots{
+                            position: relative;
+                            left: 20rem;
+                            content: "";
+                            display: block;
+                            width: 34rem;
+                            height: 30rem;
+                            background-image: url(../../Assets/Images/dotsRed.svg);
+                            opacity: .4;
+                        }
+                    }
+                    .textContainer{
+                        background:  linear-gradient(90deg, rgba(91,241,255,1) 29%, rgba(15,111,254,1) 80%);
+                        padding: 40px 36px;
+                        h1{
+                            color: #4e0a85;
+                            font-family: $secondary-font;
+                            letter-spacing: 0.1rem;
+                            margin: 0 0 60px;
+                        }
+                        p{
+                            font-family: $primary-font;
+                            letter-spacing: 0.04rem;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'tt_firs_neue_trlextralight';
+    src: url('tt_firs_neue_trial_extralight.woff2') format('woff2'),
+         url('tt_firs_neue_trial_extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
