@@ -313,7 +313,7 @@ html body #contents #contentsSubsector .currenciesHorizontalLine {
   width: 2px;
   background-color: #362985;
   left: 94%;
-  bottom: 20.8%;
+  bottom: 1340px;
 }
 html body #contents #contentsSubsector .scrollTop {
   transform: rotate(90deg);
@@ -406,15 +406,27 @@ html body #contents #contentsSubsector .container-fluid .tableData .row .col .ta
   height: 280px;
   width: 520px;
 }
+html body #contents #footer .container-fluid .row .imgCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(36, 83, 196) 41%, rgb(42, 209, 201) 80%);
+  margin: 110px 0 0;
+}
 html body #contents #footer .container-fluid .row .col .imageContainerFooter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 html body #contents #footer .container-fluid .row .col .imageContainerFooter img {
-  height: 400px;
+  height: 300px;
   width: 500px;
   margin: 0 !important;
+}
+html body #contents #footer .container-fluid .row .col .row {
+  margin: 0 0 0 10px;
+  padding: 5px 0 0 10px;
+  background: linear-gradient(90deg, rgb(169, 63, 179) 41%, rgb(100, 42, 209) 80%);
 }
 html body #contents #footer .container-fluid .row .col .row .col {
   display: flex;

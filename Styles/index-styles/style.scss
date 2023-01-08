@@ -350,7 +350,8 @@ html{
                 width: 2px;
                 background-color: $quarternary-color;
                 left: 94%;
-                bottom: 20.8%;
+                // bottom: 20.8%;
+                bottom: 1340px;
             }
             .scrollTop{
                 h1{
@@ -455,19 +456,31 @@ html{
         #footer{
             .container-fluid{
                 .row{
+                    // background: linear-gradient(90deg, rgba(36,83,196,1) 41%, rgba(42,209,201,1) 80%);
+                    .imgCol{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: linear-gradient(90deg, rgba(36,83,196,1) 41%, rgba(42,209,201,1) 80%);
+                        margin: 110px 0 0;
+                    }
                     .col{
                         .imageContainerFooter{
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             img{
-                                height: 400px;
+                                height: 300px;
                                 width: 500px;
                                 margin: 0 !important;
                             }
                         }
                         .row{
+                            margin: 0 0 0 10px;
+                            padding: 5px 0 0 10px;
+                            background: linear-gradient(90deg, rgba(169,63,179,1) 41%, rgba(100,42,209,1) 80%);
                             .col{
+                                // margin: 10px 0px 0 10px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
