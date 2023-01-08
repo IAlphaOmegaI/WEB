@@ -1,0 +1,50 @@
+{
+    "row1":{
+        "number":1,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    },
+    "row2":{
+        "number":2,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    },
+    "row3":{
+        "number":3,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    },
+    "row4":{
+        "number":4,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    },
+    "row5":{
+        "number":5,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    },
+    "row6":{
+        "number":6,
+        "name":"Bitcoin",
+        "price":"1,180,000",
+        "change":"+0.12$",
+        "src":"./Assets/Images/marketingImg.jpg",
+        "text":"Maecenas dignissim quam condimentum neque suscipit, non tincidunt nunc interdum. Nulla lacus enim, dapibus a finibus ut, sodales at libero. Maecenas ornare tincidunt est in mattis. Suspendisse non lectus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis egestas pellentesque velit, eget semper enim ornare a. "
+    }
+}
